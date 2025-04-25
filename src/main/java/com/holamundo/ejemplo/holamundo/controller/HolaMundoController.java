@@ -1,9 +1,9 @@
 package com.holamundo.ejemplo.holamundo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 
 
@@ -16,9 +16,7 @@ public class HolaMundoController {
     }
 
     @PostMapping("/holapost")
-    public String homaMundoPost(@RequestBody String entity) {
-        //TODO: process POST request
-        
+    public String homaMundoPost(@RequestBody String entity) {        
         return "Hola " +entity;
     }
     
